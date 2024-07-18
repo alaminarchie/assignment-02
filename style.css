@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+/* Common Style CSS */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header Style CSS */
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav_bar .logo_name {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 800;
+  color: #e6533c;
+}
+.nav_link {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+}
+.nav_link li {
+  list-style: none;
+  margin: 0 30px;
+}
+.nav_link li:first-child {
+  margin-left: 0;
+}
+.nav_link a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.nav_link li.active {
+  padding: 8px 20px;
+  border-radius: 40px;
+  background-color: #e6533c;
+}
+.nav_link li.active a {
+  font-size: 18px;
+  font-weight: 800;
+}
+.nav_link a:hover {
+  color: #ff6347;
+}
+
+/* Banner Style CSS */
+.banner_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 80px);
+}
+.banner_text {
+  flex: 1;
+}
+.banner_title {
+  font-size: 70px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.style_font {
+  font-weight: 200;
+}
+.banner_desc {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+.btn_primary {
+  background: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  margin-right: 10px;
+}
+.app {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+}
+.btn_primary.app:hover {
+  background: #e5533c;
+}
+
+.banner_img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.banner_img img {
+  max-width: 100%;
+  height: auto;
+  margin-right: -200px;
+}
+
+.five_h {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 150px;
+  right: -60px;
+}
+.five_h p:first-child {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+.five_h p:last-child {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+}
+.three_h {
+  display: flex;
+  align-items: center;
+}
+.three_h .cyrcle {
+  width: 30px;
+  height: 30px;
+  background-color: #e5533c;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.three_h {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  position: absolute;
+  bottom: 80px;
+  left: 100px;
+}
+.three_h p:first-child {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.three_h p:last-child {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+}
